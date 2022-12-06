@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "video-chat-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4"
+  }
+}
