@@ -11,7 +11,7 @@ const io = require("socket.io")(server, {
     methods: ["GET", "POST"],
   },
 });
-// 服务器socket连接
+
 io.on("connection", (socket) => {
   socket.on("disconnect", () => {
     socket.broadcast.emit("断开连接");
