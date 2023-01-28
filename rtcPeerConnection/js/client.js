@@ -129,7 +129,7 @@ localPeerConnection.setLocalDescription(description)
 }).catch(setSessionDescriptionError);
 
 trace('remotePeerConnection setRemoteDescription start.');
-//B使用setRemoteDescription将A发送过来的米哦啊叔设置成自己的远端描述
+//B使用setRemoteDescription将A发送过来的描述设置成自己的远端描述
 remotePeerConnection.setRemoteDescription(description)
 .then(() => {
   
@@ -201,6 +201,7 @@ const servers = null;
 //本地的创建RTCPeerConnection对象
 localPeerConnection = new RTCPeerConnection(servers);
 trace('Created local peer connection object localPeerConnection.');
+
 
 //A和B需要交换网络信息，通过ICE框架查找网络接口和端口
 localPeerConnection.addEventListener('icecandidate', handleConnection);
